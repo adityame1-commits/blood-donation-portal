@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Blood Donation Portal</h1>
+        <p>Donate Blood, Save Lives</p>
+    </header>
+
+    <nav>
+        <a href="#home" >Home</a>
+        <a href="#bloodgroups" >Blood Groups</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="#camps" >Camps</a>
+        <a href="#guidelines" >Guidelines</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Blood Donation Portal</h2>
+
+        <p>
+            Blood donation is a noble act that can save many lives.
+            Our portal helps people learn about blood donation,
+            upcoming camps and donor registration.
+        </p>
+
+        <p>
+            Your one donation can make a big difference.
+        </p>
+    </section>
+
+    <section id="bloodgroups">
+        <h2>Blood Groups</h2>
+
+        <p>
+            There are eight main blood groups.
+            Each blood group has different compatibility.
+        </p>
+
+        <ul>
+            <li>A Positive (A+)</li>
+            <li>A Negative (A-)</li>
+            <li>B Positive (B+)</li>
+            <li>B Negative (B-)</li>
+            <li>AB Positive (AB+)</li>
+            <li>AB Negative (AB-)</li>
+            <li>O Positive (O+)</li>
+            <li>O Negative (O-)</li>
+        </ul>
+
+        <p>
+            O negative blood is commonly known as the
+            universal red blood cell donor type.
+        </p>
+    </section>
+
+    <section id="eligibility">
+        <h2>Donation Eligibility</h2>
+
+        <p>A person should generally meet the following conditions:</p>
+
+        <ul>
+            <li>Should be in good health.</li>
+            <li>Should be at least 18 years old.</li>
+            <li>Should meet the required weight criteria.</li>
+            <li>Should not have any condition that makes donation unsafe.</li>
+            <li>Should pass the medical screening before donation.</li>
+        </ul>
+
+        <p>
+            Final eligibility is decided by a qualified medical professional.
+        </p>
+    </section>
+
+    <section id="camps">
+        <h2>Upcoming Blood Donation Camps</h2>
+
+        <table>
+            <tr>
+                <th>Camp Name</th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+
+            <tr>
+                <td>Hospital Camp</td>
+                <td>10 November 2026</td>
+                <td>City Hospital</td>
+            </tr>
+
+            <tr>
+                <td>College Blood Donation Camp</td>
+                <td>15 November 2026</td>
+                <td>G-Block, KIET</td>
+            </tr>
+
+            <tr>
+                <td>Health Awareness Camp</td>
+                <td>20 November 2026</td>
+                <td>Healthy Hut</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="locations">
+        <h2>Donation Locations</h2>
+
+        <ul>
+            <li>City Hospital</li>
+            <li>Government Medical College</li>
+            <li>Red Cross Blood Bank</li>
+            <li>Community Health Centre</li>
+        </ul>
+    </section>
+
+    <section id="guidelines">
+        <h2>Blood Donation Guidelines</h2>
+
+        <ul>
+            <li>Eat a healthy meal before donating blood.</li>
+            <li>Drink enough water.</li>
+            <li>Carry a valid identity card.</li>
+            <li>Get enough sleep before donation.</li>
+            <li>Follow the instructions given by medical staff.</li>
+            <li>Take proper rest after donating blood.</li>
+        </ul>
+    </section>
+
+    <section id="information">
+        <h2>Important Information</h2>
+
+        <p>
+            Blood donation is a safe process when performed
+            by trained medical professionals.
+        </p>
+
+        <p>
+            Donated blood is tested before it is used for patients.
+            Regular voluntary blood donation helps maintain
+            an adequate blood supply.
+        </p>
+
+        <p>
+            Contact: blooddonation@example.com
+        </p>
+    </section>
+
+    <section id="register">
+        <h2>Donor Registration Form</h2>
+
+        <form id="donorForm">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="blood">Blood Group:</label>
+            <select id="blood" name="blood" required>
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

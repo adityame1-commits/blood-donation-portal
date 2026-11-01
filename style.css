@@ -1,0 +1,269 @@
+
+/* Basic website styling */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #c62828;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+/* Navigation using Flexbox */
+
+nav {
+    background-color: #eeeeee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+    padding: 12px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #c62828;
+}
+
+
+/* Main sections */
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #c62828;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* Blood groups using CSS Grid */
+
+#bloodgroups ul {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+#bloodgroups li {
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* Eligibility using CSS Grid */
+
+#eligibility ul {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+    padding-left: 20px;
+}
+
+
+/* Upcoming camps table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #eeeeee;
+}
+
+
+/* Locations using CSS Grid */
+
+#locations ul {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+    padding-left: 20px;
+}
+
+
+/* Guidelines using CSS Grid */
+
+#guidelines ul {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+    padding-left: 20px;
+}
+
+
+/* Registration form */
+
+form {
+    max-width: 500px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: 1px solid #c62828;
+}
+
+
+/* Register button */
+
+button {
+    background-color: #c62828;
+    color: white;
+
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a51d1d;
+}
+
+
+/* Registration message */
+
+#message {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* Responsive design for tablets */
+
+@media screen and (max-width: 900px) {
+
+    #bloodgroups ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #eligibility ul,
+    #locations ul,
+    #guidelines ul {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Responsive design for mobile phones */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #bloodgroups ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
